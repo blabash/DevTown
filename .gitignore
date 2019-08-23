@@ -1,3 +1,4 @@
 node_modules/
 /config/default.json
 .DS_Store
+/client/node_modules/
