@@ -91,7 +91,7 @@ const AddExperience = ({ addExperience, history }) => {
             Current Job
           </p>
         </div>
-        <div className='form-group'>
+        <div className={toDateDisabled ? 'form-group disabled' : 'form-group'}>
           <h4>To Date</h4>
           <input
             type='date'

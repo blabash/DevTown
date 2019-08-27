@@ -45,6 +45,10 @@ img {
   margin-bottom: 3rem;
 }
 
+.disabled {
+  opacity: 0.5;
+}
+
 /* Text Styles*/
 .x-large {
   font-size: 4rem;
