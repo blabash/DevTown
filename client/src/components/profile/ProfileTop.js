@@ -18,8 +18,7 @@ const ProfileTop = ({
       <p className='lead'>
         {status} {company && <span> at {company}</span>}
       </p>
-      <p>{location && <span> at {location}</span>}</p>
-      <p>Seattle, WA</p>
+      <p>{location && <span> in {location}</span>}</p>
       <div className='icons my-1'>
         {website && (
           <a href={website} target='_blank' rel='noopener noreferrer'>
@@ -32,22 +31,22 @@ const ProfileTop = ({
           </a>
         )}
         {social && social.facebook && (
-          <a href='#' target='_blank' rel='noopener noreferrer'>
+          <a href={social.facebook} target='_blank' rel='noopener noreferrer'>
             <i className='fab fa-facebook fa-2x'></i>
           </a>
         )}
         {social && social.linkedin && (
-          <a href='#' target='_blank' rel='noopener noreferrer'>
+          <a href={social.linkedin} target='_blank' rel='noopener noreferrer'>
             <i className='fab fa-linkedin fa-2x'></i>
           </a>
         )}
         {social && social.youtube && (
-          <a href='#' target='_blank' rel='noopener noreferrer'>
+          <a href={social.youtube} target='_blank' rel='noopener noreferrer'>
             <i className='fab fa-youtube fa-2x'></i>
           </a>
         )}
         {social && social.instagram && (
-          <a href='#' target='_blank' rel='noopener noreferrer'>
+          <a href={social.instagram} target='_blank' rel='noopener noreferrer'>
             <i className='fab fa-instagram fa-2x'></i>
           </a>
         )}
