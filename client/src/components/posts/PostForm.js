@@ -6,9 +6,9 @@ import { addPost } from '../../actions/post';
 const PostForm = ({ addPost }) => {
   const [text, setText] = useState('');
   return (
-    <div class='post-form'>
+    <div className='post-form'>
       <form
-        class='form my-1'
+        className='form my-1'
         onSubmit={e => {
           e.preventDefault();
           addPost({ text });
@@ -24,7 +24,7 @@ const PostForm = ({ addPost }) => {
           onChange={e => setText(e.target.value)}
           required
         ></textarea>
-        <input type='submit' class='btn btn-dark my-1' value='Submit' />
+        <input type='submit' className='btn btn-dark my-1' value='Submit' />
       </form>
     </div>
   );

@@ -21,7 +21,7 @@ const Post = ({ getPost, post: { post, loading }, match }) => {
         Back To Posts
       </Link>
       <PostItem post={post} showActions={false} />
-      <div class='bg-primary p'>
+      <div className='bg-primary p'>
         <h3>Comments</h3>
       </div>
       <div className='comments'>
