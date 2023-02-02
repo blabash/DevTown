@@ -4,12 +4,11 @@
   "description": "Social Network for devs",
   "main": "server.js",
   "scripts": {
-    "dev": "react-scripts start",
-    "start": "serve -s build",
-    "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject",
-    "heroku-postbuild": "npm run build"
+    "start": "node server",
+    "server": "nodemon server",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client"
   },
   "author": "\"Brett Labash",
   "license": "MIT",
@@ -21,8 +20,7 @@
     "gravatar": "^1.8.0",
     "jsonwebtoken": "^8.5.1",
     "mongoose": "^5.7.5",
-    "request": "^2.88.0",
-    "serve": "^14.2.0"
+    "request": "^2.88.0"
   },
   "devDependencies": {
     "concurrently": "^4.1.2",
